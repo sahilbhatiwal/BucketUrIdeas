@@ -5,11 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      margin: 0%;
-      display: grid;
+      body{
+        margin:0%;
+        padding: 0%;
+      }
+      .container {
+        background-color: wheat;
+        padding:0%
+        margin: 0%;
+        font-size:40px;
+        display: grid;
+        color:white;
+        text-align:center;
+        grid-template-rows:[headder-start] 200px[headder-end content-start] 1000px[content-end footer-start] 300px[footer-end];
+        grid-template-columns:repeat(4,25%)
+      }
+      .headder
+      {
+        background-color: #000000;
+        grid-area:1/1/1/-1;
+        grid-column: 1/-1;
+      }
+      .content
+      {
+        background-color: hotpink;
+        grid-area: 2/1/3/-1;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+      }
+      .footer
+      {
+        background-color: yellow;
+        grid-area: 3/1/4/-1;
+      }
     </style>
   </head>
   <body>
-    <p></p>
+    <div class="container">
+      <div class="grids headder">headder</div>
+      <div class="grid content">content</div>
+      <div class="grid footer">footer</div>
+    </div>
   </body>
 </html>
