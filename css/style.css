@@ -247,3 +247,28 @@ h2 {
     grid-template-columns: 90%;
   }
 }
+ .artist{
+            
+            width: 100%;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            justify-content: space-evenly;    
+        }
+   .artigal
+        {
+            
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+          .artigal img
+        {
+            width: 100%;
+            height: auto;
+        }
