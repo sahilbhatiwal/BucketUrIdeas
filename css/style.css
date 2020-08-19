@@ -9,22 +9,22 @@ body {
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/connect-wallpaper-1920x1080.jpg);
-  
+    url(../images/topbg3.jpg);
+
   background-size: cover;
   background-position: center;
 }
- #header {
-        width: 100% !important;
-        margin: 0;
-        height: 42vw;
-        background-image: url("./images/connect-wallpaper-1920x1080.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        opacity: 0.95;
-        color: rgb(255, 0, 106);
-      }
+#header {
+  width: 100% !important;
+  margin: 0;
+  height: 42vw;
+  background-image: url("../images/topbg3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.95;
+  color: rgb(255, 0, 106);
+}
 
 ul {
   float: right;
@@ -43,7 +43,7 @@ ul li a {
 }
 ul li a:hover {
   color: rgb(255, 162, 162);
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 .logo img {
   float: left;
@@ -77,8 +77,9 @@ body {
   margin-top: 2px;
   font-size: 30px;
   border-radius: 25px;
+  background-color: rgba(253, 253, 252, 0.198);
   padding: 5px 10px;
-  color: black;
+  color: rgb(247, 206, 73);
   font-family: "Handlee", cursive;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -89,9 +90,9 @@ body {
   height: 130px !important;
 }
 .a1:hover {
-  color: white;
-  background-color: black;
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(114, 180, 211);
+  box-shadow: rgba(255, 255, 255, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -1px, 0px);
 }
 
@@ -239,36 +240,30 @@ h2 {
     grid-template-columns: 0.8fr 0.8fr 1.2fr 0.8fr 0.8fr;
     width: 100% !important;
     margin: 0 !important;
-    
-    
   }
   .footer {
     padding: 20px 0;
     grid-template-columns: 90%;
   }
 }
- .artist{
-            
-            width: 100%;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: 22% 22% 22% 22%;
-            justify-content: space-evenly;    
-        }
-   .artigal
-        {
-            
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            border-radius: 10px;
-            margin: 20px auto;
-        }
-          .artigal img
-        {
-            width: 100%;
-            height: auto;
-        }
+.artist {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-evenly;
+}
+.artigal {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.artigal img {
+  width: 100%;
+  height: auto;
+}
