@@ -3,26 +3,414 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <title>NIT BHANGRA CREW</title>
+    <link rel="icon" type="image/png" href="./images/b1.jpg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Aladin&family=Balsamiq+Sans&family=
+Boogaloo&family=Buda:wght@300&family=Caveat:wght@700&family=Chewy&family=Cinzel:wght@400;700&family=Cookie&family=Corm
+orant+Upright:wght@600;700&family=Handlee&family=Nanum+Pen+Script&family=Open+Sans+Condensed:wght@300&family=Poiret+One&f
+amily=Raleway:wght@500&family=Ultra&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #header {
+        width: 100% !important;
+        margin: 0;
+        height: 42vw;
+        background-image: url("./images/b1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        opacity: 0.95;
+      }
+
+      .title {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+      }
+
+      .titles {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr;
+      }
+
+      .aboutouter {
+        width: 90%;
+        display: grid;
+        margin: 70px auto;
+        grid-column-gap: 30px;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        justify-content: space-between;
+      }
+
+      .pamplate {
+        height: 300px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pamplate img {
+        width: 100%;
+      }
+
+      #img6,
+      #img7 {
+        width: 50%;
+      }
+
+      .abouttext {
+        height: 470px;
+        overflow-x: hidden;
+      }
+
+      #twelfthdiv {
+        width: 20%;
+        height: 2.5px;
+        position: relative;
+        left: 250px;
+        top: 875px;
+        background-image: linear-gradient(200deg, white, orange);
+      }
+
+      #thirteendiv {
+        width: 23%;
+        height: 60px;
+        position: relative;
+        left: 600px;
+        top: 855px;
+        font-size: 30px;
+        font-family: Lucida Handwriting;
+        font-style: bold;
+        color: black;
+      }
+
+      #fourteendiv {
+        width: 20%;
+        height: 2.5px;
+        position: relative;
+        left: 990px;
+        top: 820px;
+        background-image: linear-gradient(-200deg, white, orange);
+      }
+
+      .fifteendiv {
+        height: 470px;
+        overflow-x: hidden;
+        font-size: 23px;
+        font-family: "Raleway", sans-serif;
+        color: grey;
+      }
+
+      .videopanel {
+        margin: 40px auto;
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 50% 45%;
+        align-content: center;
+        justify-content: space-between;
+      }
+
+      .videocontent {
+        margin: 10px;
+        margin-top: 2vw;
+
+        background-color: black;
+      }
+
+      .videocontent iframe {
+        box-shadow: 10px 10px 5px 5px #716745;
+      }
+
+      .videotext {
+        margin-top: 6vw;
+        color: #eece63;
+        font-family: "Cinzel", serif;
+        font-size: 2.5vw;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      }
+
+      .poster {
+        margin: 5vw auto;
+        height: 360px;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+      }
+
+      .poster img {
+        position: absolute;
+        width: 100%;
+        height: 360px;
+        top: 0;
+        z-index: 50;
+      }
+
+      .poster h3 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        color: #fef7f7;
+        font-family: "Caveat", cursive;
+        font-size: 4vw;
+        font-weight: bold;
+        border: none;
+        text-decoration: none;
+        z-index: 99;
+        float: top;
+        text-align: center;
+      }
+
+      .line {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        margin-top: 30px;
+      }
+
+      .ab {
+        font-size: 30px;
+        color: black;
+        font-family: "Raleway", sans-serif;
+        font-style: bold;
+        height: 40px;
+        font-weight: 900;
+      }
+
+      .abc {
+        font-size: 25px;
+        color: black;
+        font-family: "Cinzel", serif;
+      }
+
+      #about {
+        font-size: 23px;
+        font-family: "Raleway", sans-serif;
+        color: grey;
+      }
+
+      #history {
+        font-size: 40px;
+        position: relative;
+        top: 10px;
+        left: 600px;
+        color: orange;
+        align: center;
+        font-family: Gabriola;
+        font-style: bold;
+        text-decoration: underline;
+      }
+
+      #history1 {
+        font-size: 23px;
+        color: orange;
+        align: center;
+        font-family: Segoe Print;
+        font-style: bold;
+      }
+
+      @media screen and (max-width: 800px) {
+        .title {
+          width: 90%;
+          grid-template-columns: 1fr;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .aboutouter {
+          margin-top: 10px;
+          height: auto;
+          grid-template-columns: 1fr;
+        }
+
+        .pamplate img {
+          width: 50%;
+        }
+
+        .videopanel {
+          grid-template-columns: 100%;
+        }
+
+        .header {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <body>
-    <header>
-      <div class="main">
-        <div class="logo">
-          <img src="./images/chitkara.jpg" />
+    <div id="header">
+      <br /><br /><br />
+      <h1>NIT BHANGRA CREW</h1>
+      <br />
+      <h2>"Keep Calm & Bhangra On"</h2>
+    </div>
+    <div id="seconddiv">
+      <div><a class="a1" href="index.html">Home</a></div>
+      <div><a class="a1" href="videos.html">Videos</a></div>
+      <div><img class="img1" src="images/tlogo.png" alt="not available" /></div>
+      <div><a class="a1" href="inductions.html">Inductions</a></div>
+      <div><a class="a1" href="contact.html">Contact Us</a></div>
+    </div>
+    <div class="title">
+      <div class="titles" data-aos="fade-up">
+        <div>
+          <center><span class="ab">WHO WE ARE</span></center>
+          <div class="line"></div>
+          <br />
         </div>
-        <ul>
-          <li class="active" href="#"><a href="#">Home</a></li>
-          <li><a href="./login.html">login</a></li>
-          <li><a href="./Services.html">Services</a></li>
-          <li><a href="./contectUs.html">Contact</a></li>
-          <li><a href="./About.html">About</a></li>
-        </ul>
+        <center><span class="abc">**********</span></center>
       </div>
-      <div class="title">
-        <h1>web dev creation</h1>
+      <div class="titles" data-aos="fade-up">
+        <div>
+          <center><span class="ab">WHAT WE DO</span></center>
+          <div class="line"></div>
+          <br /><br />
+        </div>
+        <center><span class="abc">***********</span></center>
+        <br />
+        <center>
+          <img src="./images/b1.jpg" alt="error" height="60px" width="220px" />
+        </center>
       </div>
-    </header>
+      <div class="titles" data-aos="fade-up">
+        <div>
+          <center><span class="ab">WHY IT MATTERS</span></center>
+          <div class="line"></div>
+          <br />
+        </div>
+        <center><span class="abc">********</span></center>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+    <div class="brandname">
+      <div class="startline"></div>
+      <div
+        class="brandtext"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <center><span id="abt">About Us</span></center>
+      </div>
+      <div class="endline"></div>
+    </div>
+
+    <div class="aboutouter">
+      <div class="pamplate">
+        <img src="./images/b1.jpg" />
+      </div>
+      <div class="abouttext" data-aos="zoom-out-up">
+        <center><span id="about">*******</span></center>
+      </div>
+      <div class="pamplate">
+        <img src="./images/b1.jpg" />
+      </div>
+    </div>
+
+    <div class="brandname">
+      <div class="startline"></div>
+      <div
+        class="brandtext"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <center><span id="his">********</span></center>
+      </div>
+      <div class="endline"></div>
+    </div>
+    <div class="aboutouter">
+      <div class="pamplate">
+        <img id="img6" src="./images/b1.jpg" alt="error" />
+      </div>
+      <div class="abouttext fifteendiv" data-aos="zoom-out-up">
+        <center>********</center>
+      </div>
+      <div class="pamplate">
+        <img id="img7" src="./images/b1.jpg" alt="error" />
+      </div>
+    </div>
+
+    <div class="videopanel">
+      <div
+        class="videocontent"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <iframe
+          width="100%"
+          height="350px"
+          src="https://www.youtube.com/embed/7qXyizixV-E?start=34"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="videotext" data-aos="zoom-out">
+        <div>****************</div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="poster">
+      <img src="./images/b1.jpg" />
+      <h3>*****************</h3>
+    </div>
+
+    <div class="footer">
+      <div class="logos">
+        <h2 id="nbc">******</h2>
+        <div class="icons">
+          <img class="icon" src="images/insta.png" alt="error" />
+          <img class="icon" src="images/fb.png" alt="error" />
+          <img class="icon" src="images/gmail.png" alt="error" />
+          <img class="icon" src="images/youtube.png" alt="error" />
+        </div>
+      </div>
+      <div class="newsletter">
+        <div id="signin">********</div>
+        <div class="form">
+          <form>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Email Address"
+            />&nbsp;&nbsp;<button for="fname">Sign UP</button>
+            <center></center>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">
+      <h3>@Kind Hearted Devil</h3>
+    </div>
+
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
   </body>
 </html>
