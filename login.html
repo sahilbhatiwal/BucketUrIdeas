@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .formback{
+	margin: 6vw 0;
+	
+	display: grid;
+	grid-template-columns: 0.7fr;
+	justify-content: center;
+	background-color: rgb(46, 0, 24);
+	
+	
+}
+.container{
+	  
+	  margin: 100px;
+	  box-shadow: 10px 6px 6px 6px rgba(207, 205, 205, 0.2), 6px 6px 6px 6px rgba(71, 71, 71, 0.19);
+	  
+	  border-radius: 10px;
+	  
+}
+.joinus{
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 3vw;
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
+    color: #000000;
+    background-color: rgb(247, 0, 255);
+	
+}
+.formdiv{
+	
+	margin: auto;
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+;
+	
+}
+form{
+	padding: 20px;
+}
+
+.name{
+	
+	margin-top: 1vw;
+	width: 15vw;
+	color: #525252;
+	font-size: 2vw;
+	font-family: 'Abhaya Libre', serif;
+	font-weight: bold;
+	}
+#induc input{
+	border: none;
+	border-bottom: 1px solid #525252;
+	padding: 0.5vw;
+	font-size: 1vw;
+	font-family: 'Abhaya Libre', serif;
+	background: transparent;
+	color: #525252;
+}
+button{
+	padding: 0.5vw;
+	font-size: 1vw;
+	font-family: 'Abhaya Libre', serif;
+    background-color: #525252;
+    color:white
+}
+.option{
+	padding: 0.5vw;
+	font-size: 1vw;
+	font-family: 'Abhaya Libre', serif;
+	color:  #525252;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid  #525252;
+}
+.radio{
+	font-size: 1vw;
+	font-family: 'Abhaya Libre', serif;
+}
+#student{
+	
+	margin-top: 1vw;
+	width: 15vw;
+	color: #525252;
+	font-weight: bold;
+	font-size: 1.8vw;
+	font-family: 'Abhaya Libre', serif;
+	}
+.whyjoin{
+	height:5vw;
+	font-size: 1vw;
+	font-family: 'Abhaya Libre', serif;
+	border: 1px solid  #525252;
+}
+label{
+	color:  #525252
+}
+@media screen and ( max-width:600px )
+{
+  .title
+  {
+      width: 90%;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+  }
+  .container{
+	  width: 100%;
+	  margin: 15vw auto;
+      grid-template-columns: 1r;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .formback{
+
+	grid-template-columns: 0.9fr !important;
+	
+}
+.joinus,
+.name,
+input,
+button,
+.option,
+.radio,
+#student,
+.whyjoin{
+	font-size: 4vw !important;
+	
+
+}
+
+
+  
+}	
+</style>
+
+</head>
+<body>
+    <div class="formback">
+        <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="joinus">
+                <h3>Join Our Crew</h3>
+            </div>
+            <div class="formdiv">
+                <form onsubmit="return validate();" id="induc" method="get">
+    
+                    <h4 class="name">Name:</h4>
+                    <input type="text" id="firstname" name="first_name" placeholder="First Name" required><br><br>
+                    <input type="text" id="lastname" name="last_name" placeholder="Last Name" required>
+                    <br><br>
+    
+                    <h4 class="name">Your Branch:</h4>
+                    <input type="text" class="branch" name="branch" required>
+    
+                    <h4 class="name">Year:</h4>
+                    <select class="option" name="year">
+                        <option disabled="disabled" selected="selected">Choose Your Year</option>
+                        <option>1st</option>
+                        <option>2nd</option>
+                        <option>3rd</option>
+                        <option>4th</option>
+                    </select>
+    
+                    <h4 class="name">Email id:</h4>
+                    <input type="email" name="email" class="email" required>
+    
+                    <h4 class="name">Mobile no.:</h4>
+                    <input type="text" name="area_code" id="code" required>
+    
+                    <!-- <h4 id="student">Are You Beginner?</h4><br>
+                    <label class="radio">
+                        <input type="radio">
+    
+                        Yes
+                    </label>
+                    <label class="radio">
+                        <input type="radio">
+    
+                        No
+                    </label> -->
+    
+                    <h4 class="name">Which Kind Of Books Do You Like?</h4>
+                    <input type="text" id="whyjoin" name="whyjoin" required><br><br>
+    
+                    <button type="submit">Submit</button>
+    
+                </form>
+            </div>
+        </div>
+</body>
+</html>

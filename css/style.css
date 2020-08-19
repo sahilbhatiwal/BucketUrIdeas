@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: border-box;
-  font-family: century Gothic;
+  box-sizing: border-box;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -34,21 +33,200 @@ ul li a:hover {
   float: left;
   height: 150px;
 }
-.main {
-  max-width: 1200px;
-  margin: auto;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
-ul li.active a {
-  background-color: #fff;
-  color: rgb(255, 147, 147);
+
+#seconddiv {
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
 }
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#seconddiv > div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-.title h1 {
-  color: rgb(255, 111, 243);
-  font-size: 70px;
+
+.a1 {
+  height: 50px;
+  margin-top: 2px;
+  font-size: 30px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: black;
+  font-family: "Handlee", cursive;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  align-items: center;
+}
+.img1 {
+  height: 130px !important;
+}
+.a1:hover {
+  color: white;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+}
+
+.brandname {
+  width: 70%;
+  margin: 50px auto;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  justify-content: center;
+}
+.startline {
+  height: 2.5px;
+  background-image: linear-gradient(200deg, white, orange);
+  margin: auto 0;
+}
+
+.brandtext {
+  min-height: 40px;
+  font-size: 40px;
+  font-family: "Cookie", cursive;
+  font-style: bold;
+  color: black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.endline {
+  height: 2.5px;
+  background-image: linear-gradient(-200deg, white, orange);
+  margin: auto 0;
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+  background-color: #050606;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.logos {
+  margin: 100px auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px;
+  margin: 50px auto;
+  width: 50%;
+}
+.icon {
+  height: 32px;
+  width: 32px;
+}
+#nbc {
+  font-size: 30px;
+  color: white;
+  font-family: "Abhaya Libre", serif;
+}
+#signin {
+  font-size: 20px;
+  color: white;
+  font-family: "Abhaya Libre", serif;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.newsletter {
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-around;
+  justify-content: space-around;
+}
+.newsletter input {
+  font-style: Bahnschrift SemiBold;
+  padding: 10px;
+}
+.newsletter button {
+  font-style: Bahnschrift SemiBold;
+  border: 1px solid white;
+  color: white;
+  background-color: lightblue;
+  font-style: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.copy {
+  height: 70px;
+  color: white;
+  font-size: 20px;
+  font-family: "Poiret One", cursive;
+  background-color: #050606;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 4vw;
+  color: white;
+  font-family: "Cormorant Upright", serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: overline;
+  opacity: 2;
+  text-shadow: 2px 2px 8px #145a32;
+}
+h2 {
+  font-size: 2vw;
+  color: white;
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  line-height: 10%;
+  opacity: 2;
+  text-shadow: 2px 2px 8px #145a32;
+}
+
+@media screen and (max-width: 600px) {
+  .a1 {
+    font-size: 10px;
+    height: 30px;
+  }
+  .img1 {
+    height: 40px !important;
+    margin: 0 auto;
+  }
+  #seconddiv {
+    grid-template-columns: 0.8fr 0.8fr 1.2fr 0.8fr 0.8fr;
+    width: 100% !important;
+    margin: 0 !important;
+    height: 25vw;
+  }
+  .footer {
+    padding: 20px 0;
+    grid-template-columns: 90%;
+  }
 }
