@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         *{
         margin:0;
@@ -11,7 +12,7 @@
         padding:0;
     }
     .formback{
-	margin: 6vw 0;
+	
 	
 	display: grid;
 	grid-template-columns: 0.7fr;
@@ -152,6 +153,20 @@ button,
 
 </head>
 <body>
+    <header>
+        <div id="header">
+            <br /><br /><br />
+            <h1>BUCKET UR BOOKS</h1>
+            <br />
+            <h2>"Lets Share and Help others"</h2>
+        </div>
+        <div id="seconddiv">
+            <div><a class="a1" href="./index.html">Home</a></div>
+            <div><a class="a1" href="./About.html">About Us</a></div>
+            <div><a class="a1" href="./login.html">Login</a></div>
+            <div><a class="a1" href="./contectUs.html">Contact Us</a></div>
+        </div>
+    </header>
     <div class="formback">
         <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="joinus">
@@ -203,5 +218,37 @@ button,
                 </form>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <div class="logos">
+            <h2 id="nbc">******</h2>
+            <div class="icons">
+                <img class="icon" src="images/insta.png" alt="error" />
+                <img class="icon" src="images/fb.png" alt="error" />
+                <img class="icon" src="images/gmail.png" alt="error" />
+                <img class="icon" src="images/youtube.png" alt="error" />
+            </div>
+        </div>
+        <div class="newsletter">
+            <div id="signin">********</div>
+            <div class="form">
+                <form>
+                    <input type="text" id="fname" name="fname" placeholder="Email Address" />&nbsp;&nbsp;<button
+                        for="fname">Sign UP</button>
+                    <center></center>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copy">
+        <h3>@Kind Hearted Devil</h3>
+    </div>
+    
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
 </html>
