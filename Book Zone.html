@@ -17,6 +17,7 @@ amily=Raleway:wght@500&family=Ultra&family=Yeseva+One&display=swap"
     />
   </head>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 
   <body>
     <header>
@@ -36,37 +37,37 @@ amily=Raleway:wght@500&family=Ultra&family=Yeseva+One&display=swap"
     <br /><br /><br />
     <br /><br /><br />
     <div class="artist">
-      <div data-aos="fade-down-right" class="artigal">
-        <img src="./images/book 1.jpg" />
+      <div data-aos="fade-down-right" class="artigal" >
+        <img src="./images/book 1.jpg" onclick="chet(this.src)"  >
       </div>
 
       <div data-aos="fade-down" class="artigal">
-        <img src="./images/book 2.jpg" />
+        <img src="./images/book 2.jpg" onclick="chet(this.src)" >
       </div>
       <div data-aos="fade-down" class="artigal">
-        <img src="./images/book 3.jpg" />
+        <img src="./images/book 3.jpg" onclick="chet(this.src)" >
       </div>
 
       <div data-aos="fade-down-left" class="artigal">
-        <img src="./images/book  4.jpg" />
+        <img src="./images/book  4.jpg" onclick="chet(this.src)" >
       </div>
     </div>
     <br><br><br>
     <div class="artist">
       <div data-aos="fade-up-right" class="artigal">
-        <img src="./images/book 5.jpg" />
+        <img src="./images/book 5.jpg" onclick="chet(this.src)" >
       </div>
 
       <div data-aos="fade-up" class="artigal">
-        <img src="./images/book 6.jpg" />
+        <img src="./images/book 6.jpg" onclick="chet(this.src)" >
       </div>
 
       <div data-aos="fade-up" class="artigal">
-        <img src="./images/book 7.jpg" />
+        <img src="./images/book 7.jpg" onclick="chet(this.src)" >
       </div>
 
       <div data-aos="fade-up-left" class="artigal">
-        <img src="./images/book 8.jpg" />
+        <img src="./images/book 8.jpg" onclick="chet(this.src)" >
       </div>
     </div>
 
@@ -116,7 +117,7 @@ amily=Raleway:wght@500&family=Ultra&family=Yeseva+One&display=swap"
             <a href="https://instagram.com/"><img class="icon" src="images/insta.png" alt="error" /></a>
             <a href="https://www.facebook.com"><img class="icon" src="images/fb.png" alt="error" />
                 <a href="https://gmail.com/"><img class="icon" src="images/gmail.png" alt="error" />
-                    <a href="https://youtube.com/"><img class="icon" src="images/youtube.png" alt="error" />
+                    <a href="#"><img class="icon" src="images/youtube.png" alt="error" />
         </div>
     </div>
     <div class="newsletter">
@@ -135,10 +136,51 @@ amily=Raleway:wght@500&family=Ultra&family=Yeseva+One&display=swap"
 <div class="copy">
     <h3>@Kind Hearted Devil</h3>
 </div>
+<div class="blur" id="popb">
+
+  <div class="pop">
+    <button class="close" onclick="cl()"> X </button>
+    <br>
+    <br>
+    <br>
+    <img id="popi" src="./images/logo.png" alt="" onclick="cl()">
+    <br>
+    <br>
+    <br>
+    <h2>BOOK NAME:XYZ</h2>
+    <br><br>
+
+    <h5>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deserunt eaque omnis accusamus doloremque odit corporis quod alias qui autem aliquam similique blanditiis laboriosam, beatae eum minus iusto magni dolore labore quis. Quae similique saepe fuga deserunt. Quis tempore deserunt velit dignissimos porro voluptates autem obcaecati. Eos quam perferendis dicta.
+    </h5>
+  <br>
+  <br>
+  <input type="button" value="buynow" class="a1">
+  </div>
+
+</div>
+
+
+
     <script>
       AOS.init({
         duration: 1200,
       });
+    </script>
+    <script>
+      function chet(sahil) {
+        var p = document.getElementById('popb');
+        p.style.display = "grid";
+        console.log(sahil);
+        var p = document.getElementById('popi');
+        p.src = sahil;
+      }
+
+        function cl() {
+
+            var p = document.getElementById('popb');
+            p.style.display = "none";
+          }
     </script>
   </body>
 </html>
