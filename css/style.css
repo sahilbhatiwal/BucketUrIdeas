@@ -3,10 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100%;
-  margin: 0;
-}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/topbg3.jpg);
@@ -45,10 +42,7 @@ ul li a:hover {
   color: rgb(255, 162, 162);
   background-color: rgb(255, 255, 255);
 }
-.logo img {
-  float: left;
-  height: 150px;
-}
+
 
 html,
 body {
@@ -82,7 +76,7 @@ body {
   color: rgb(247, 206, 73);
   font-family: "Handlee", cursive;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  
   text-decoration: none;
   align-items: center;
 }
@@ -95,6 +89,15 @@ body {
   box-shadow: rgba(255, 255, 255, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -1px, 0px);
 }
+.active
+{
+  color: rgb(0, 0, 0);
+  background-color: rgb(114, 180, 211);
+  box-shadow: rgba(255, 255, 255, 0.22) 0px 19px 43px;
+ 
+
+}
+
 
 .brandname {
   width: 70%;
