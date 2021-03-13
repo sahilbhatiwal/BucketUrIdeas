@@ -80,10 +80,10 @@ button{
 	padding: 0.5vw;
 	font-size: 1vw;
 	font-family: 'Abhaya Libre', serif;
-	color:  #fffbfb;
+	color: black;
 	background: transparent;
 	border: none;
-	border-bottom: 2px solid  #525252;
+	border-bottom: 2px solid  white;
 }
 .radio{
 	font-size: 1vw;
@@ -139,11 +139,7 @@ button,
 .whyjoin{
 	font-size: 4vw !important;
 	
-
 }
-
-
-  
 }	
 </style>
 
@@ -170,15 +166,12 @@ button,
             </div>
             <div class="formdiv">
                 <form onsubmit="return validate();" id="induc" method="get">
-    
                     <h4 class="name">Name:</h4>
                     <input type="text" id="firstname" name="first_name" placeholder="First Name" required><br><br>
                     <input type="text" id="lastname" name="last_name" placeholder="Last Name" required>
                     <br><br>
-    
                     <h4 class="name">Your Branch:</h4>
                     <input type="text" class="branch" name="branch" required>
-    
                     <h4 class="name">Year:</h4>
                     <select class="option" name="year">
                         <option disabled="disabled" selected="selected">Choose Your Year</option>
@@ -193,19 +186,6 @@ button,
     
                     <h4 class="name">Mobile no.:</h4>
                     <input type="text" name="area_code" id="code" required>
-    
-                    <!-- <h4 id="student">Are You Beginner?</h4><br>
-                    <label class="radio">
-                        <input type="radio">
-    
-                        Yes
-                    </label>
-                    <label class="radio">
-                        <input type="radio">
-    
-                        No
-                    </label> -->
-    
                     <h4 class="name">Which Kind Of Books Do You Like?</h4>
                     <input type="text" id="whyjoin" name="whyjoin" required><br><br>
     

@@ -43,7 +43,6 @@ ul li a:hover {
   background-color: rgb(255, 255, 255);
 }
 
-
 html,
 body {
   margin: 0;
@@ -65,7 +64,6 @@ body {
   align-content: center;
   justify-content: center;
 }
-
 .a1 {
   height: 50px;
   margin-top: 2px;
@@ -76,7 +74,6 @@ body {
   color: rgb(247, 206, 73);
   font-family: "Handlee", cursive;
   cursor: pointer;
-  
   text-decoration: none;
   align-items: center;
 }
@@ -89,16 +86,11 @@ body {
   box-shadow: rgba(255, 255, 255, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -1px, 0px);
 }
-.active
-{
+.active {
   color: rgb(0, 0, 0);
   background-color: rgb(114, 180, 211);
   box-shadow: rgba(255, 255, 255, 0.22) 0px 19px 43px;
- 
-
 }
-
-
 .brandname {
   width: 70%;
   margin: 50px auto;
@@ -113,7 +105,6 @@ body {
   background-image: linear-gradient(200deg, white, orange);
   margin: auto 0;
 }
-
 .brandtext {
   min-height: 40px;
   font-size: 40px;
@@ -129,7 +120,6 @@ body {
   background-image: linear-gradient(-200deg, white, orange);
   margin: auto 0;
 }
-
 .footer {
   height: auto;
   width: 100%;
@@ -149,7 +139,6 @@ body {
   align-content: center;
   justify-content: center;
 }
-
 .icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -270,60 +259,50 @@ h2 {
   width: 100%;
   height: auto;
 }
-.blur
-{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index: 22;
-    background-color:white;
-    display: none;
-    grid-template-columns: 80%;
-    grid-template-rows: 70%;
-    margin:0;
-    padding:0;
-    
-    justify-content: center !important;
-    
+.blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 22;
+  background-color: white;
+  display: none;
+  grid-template-columns: 80%;
+  grid-template-rows: 70%;
+  margin: 0;
+  padding: 0;
+
+  justify-content: center !important;
 }
 
-.pop
-{
-    
-    width:90%;
-    height:auto;
-    margin:10px auto;
-
-    
-    
+.pop {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
 }
 
-.pop img
-{
-    height: 60%;
-    width: auto;
-    margin:0 10%;
-    border-radius: 30px;
+.pop img {
+  height: 60%;
+  width: auto;
+  margin: 0 10%;
+  border-radius: 30px;
 }
-.close
-{
-    width:30x;
-    height:30px;
-    border-radius: 4px;
-    padding: 5px 5.2px;
-    font-size: 1rem;
-    background-color:white;
-    position: relative;
-    top:1%;
-    left:96%;
-    border:none;
-    transform: initial;
-    transition: 1s transform;
+.close {
+  width: 30x;
+  height: 30px;
+  border-radius: 4px;
+  padding: 5px 5.2px;
+  font-size: 1rem;
+  background-color: white;
+  position: relative;
+  top: 1%;
+  left: 96%;
+  border: none;
+  transform: initial;
+  transition: 1s transform;
 }
-.close:hover
-{
-    transform: scale(1.5,1.5);
-    transition: 500ms transform;
+.close:hover {
+  transform: scale(1.5, 1.5);
+  transition: 500ms transform;
 }
